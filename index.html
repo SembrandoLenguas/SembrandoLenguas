@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sembrando Lenguas - Transformamos idiomas en oportunidades</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#inicio" class="logo">
+                <div class="logo-container">
+                    <!-- Aquí puedes agregar tu imagen del logo -->
+                    <img src="Imagenes/logo2.png">
+                    <!-- Icono de respaldo mientras no tengas la imagen -->
+                    <!-- <i class="fas fa-seedling"></i>-->
+                </div>
+                <span>Sembrando Lenguas</span>
+            </a><i "></i>
+                
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#programas">Programas</a></li>
+                <li><a href="#colabora">Colabora</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1> Sembrando Lenguas</h1>
+            <p class="hero-quote">"Si hablas a una persona en una lengua que entiende, las palabras irán a su cabeza. Si le hablas en su propia lengua, las palabras irán a su corazón"</p>
+            <p class="hero-description">
+                Somos una organización sin fines de lucro que busca que todos los niños, niñas y adolescentes de instituciones públicas accedan a una educación de calidad a través del aprendizaje de idiomas.
+            </p>
+            <div class="cta-buttons">
+                <a href="#donadores" class="btn btn-primary">
+                    <i class="fas fa-heart"></i>
+                    Ser Donador
+                </a>
+                <a href="#voluntarios" class="btn btn-secondary">
+                    <i class="fas fa-hands-helping"></i>
+                    Ser Voluntario
+                </a>
+                <a href="#estudiantes" class="btn btn-secondary">
+                    <i class="fas fa-graduation-cap"></i>
+                    Estudiar Idiomas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="tab-nav">
+            <button class="tab-btn active" onclick="openTab(event, 'mision-vision')">
+                <i class="fas fa-bullseye"></i>
+                <span>Misión & Visión</span>
+            </button>
+            <button class="tab-btn" onclick="openTab(event, 'historia')">
+                <i class="fas fa-history"></i>
+                <span>Nuestra Historia</span>
+            </button>
+            <button class="tab-btn" onclick="openTab(event, 'valores')">
+                <i class="fas fa-star"></i>
+                <span>Valores</span>
+            </button>
+            <button class="tab-btn" onclick="openTab(event, 'programas')">
+                <i class="fas fa-book-open"></i>
+                <span>Programas</span>
+            </button>
+        </div>
+
+        <!-- Misión y Visión Tab -->
+        <div id="mision-vision" class="tab-content active">
+            <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 3rem; font-size: 2.5rem;">Compromiso y Propósito</h2>
+            
+            <div class="mvv-grid">
+                <div class="mvv-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3 style="margin-bottom: 1rem;">Misión</h3>
+                    <p>Fomentar el aprendizaje de idiomas en niñas y niños del Perú, a través de propuestas educativas innovadoras que aseguren una formación de calidad, inclusiva y accesible para todas y todos.</p>
+                </div>
+                <div class="mvv-card">
+                    <i class="fas fa-eye"></i>
+                    <h3 style="margin-bottom: 1rem;">Visión</h3>
+                    <p>Convertirnos en la organización líder en el Perú en impacto y alcance, brindando a niñas y niños la oportunidad de aprender al menos un idioma adicional, en un entorno inclusivo, respetuoso y libre de discriminación.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <h3 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 2rem;">Transformamos idiomas en oportunidades</h3>
+                <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: var(--text-color);">
+                    Creemos firmemente que el aprendizaje de idiomas es una herramienta poderosa para abrir puertas, conectar culturas y crear oportunidades. Cada palabra aprendida es una semilla plantada para un futuro mejor.
+                </p>
+            </div>
+        </div>
+
+        <!-- Historia Tab -->
+        <div id="historia" class="tab-content">
+            <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 3rem; font-size: 2.5rem;">Nuestra Historia</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2020</div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Nuestro Nacimiento</h3>
+                        <p>Nacimos en plena pandemia, ante la necesidad urgente de brindar acceso a la educación a niñas, niños y adolescentes del Perú que, por razones tecnológicas o económicas, no podían continuar con sus clases, especialmente en el aprendizaje de idiomas.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2021</div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Primeros Programas</h3>
+                        <p>Lanzamos nuestro primer programa: <strong>Aprende y Enseña</strong>, donde jóvenes con conocimientos en idiomas, tanto originarios como extranjeros, enseñan a estudiantes de diferentes regiones. También creamos <strong>Cursos Libres</strong> para mayores de 18 años.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2022-2024</div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Crecimiento e Innovación</h3>
+                        <p>Seguimos creciendo con iniciativas como <strong>Bibliotecas de la Calle</strong> y <strong>Kuskalla</strong>, expandiendo el acceso a la lectura, plataformas digitales y combatiendo el analfabetismo digital en zonas vulnerables.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--bg-light); border-radius: 20px;">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Nuestra Meta</h3>
+                <p style="font-size: 1.1rem;">Construir un Perú con más oportunidades lingüísticas, educativas e inclusivas.</p>
+            </div>
+        </div>
+
+        <!-- Valores Tab -->
+        <div id="valores" class="tab-content">
+            <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 2rem; font-size: 2.5rem;">Nuestros Valores</h2>
+            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem;">Los valores dentro de Sembrando Lenguas apoyan a la visión como organización, dan forma a la misión y la cultura</p>
+            
+            <div class="values-section">
+                <div class="values-grid">
+                    <div class="value-item">
+                        <i class="fas fa-search"></i>
+                        <h4>Transparencia</h4>
+                        <p>Sembrando Lenguas actúa de manera transparente y siempre en función de sus valores, las acciones parten desde nuestro compromiso con la sociedad.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Responsabilidad</h4>
+                        <p>Entendemos la responsabilidad como el compromiso hacia la sociedad y el entorno que nos rodea, particularmente hacia quienes no poseen los medios para desarrollar una lengua extranjera.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-sync-alt"></i>
+                        <h4>Transformación Social</h4>
+                        <p>Estamos comprometidos con la transformación social, la orientación a las personas, la reivindicación y la adaptación al cambio para satisfacer las necesidades de los beneficiarios.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-heart"></i>
+                        <h4>Respeto</h4>
+                        <p>Reconocemos el respeto a las personas y sus derechos. Trabajamos por el respeto como vía de convivencia y enriquecimiento mutuo.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Solidaridad</h4>
+                        <p>Entendemos que la solidaridad hacia el desarrollo integral del ser humano es el valor esencial para el logro del bien común.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Programas Tab -->
+        <div id="programas" class="tab-content">
+            <h2 style="text-align: center; color: var(--secondary-color); margin-bottom: 3rem; font-size: 2.5rem;">Nuestros Programas</h2>
+            
+            <div class="programs-container">
+                <div class="program-card">
+                    <div class="program-card-header">
+                        <div class="program-expand-indicator">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="program-header">
+                            <div class="program-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div>
+                                <h3>Aprende y Enseña</h3>
+                                <p style="margin: 0; opacity: 0.9; font-size: 0.9rem;">Educación peer-to-peer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="program-content">
+                        <p class="program-description">
+                            <strong>Descripción:</strong> Programa innovador donde jóvenes con conocimientos en idiomas, tanto originarios como extranjeros, enseñan a estudiantes de diferentes regiones del país, creando una red de aprendizaje colaborativo.
+                        </p>
+                        
+                        <div class="program-features">
+                            <div class="program-feature">
+                                <strong>Principio:</strong> "Quien enseña, aprende dos veces"
+                            </div>
+                            <div class="program-feature">
+                                <strong>Modalidad:</strong> Virtual y presencial
+                            </div>
+                            <div class="program-feature">
+                                <strong>Alcance:</strong> Nacional a través de redes sociales
+                            </div>
+                            <div class="program-feature">
+                                <strong>Idiomas:</strong> Originarios y extranjeros
+                            </div>
+                        </div>
+
+                        <div class="program-stats">
+                            <div class="program-stat">
+                                <span class="program-stat-number">50+</span>
+                                <span class="program-stat-label">Estudiantes Activos</span>
+                            </div>
+                            <div class="program-stat">
+                                <span class="program-stat-number">15+</span>
+                                <span class="program-stat-label">Voluntarios Docentes</span>
+                            </div>
+                            <div class="program-stat">
+                                <span class="program-stat-number">2</span>
+                                <span class="program-stat-label">Regiones del Perú</span>
+                            </div>
+                        </div>
+
+                        <div class="program-cta">
+                            <a href="mailto:sembrandolenguas@gmail.com" class="program-btn">
+                                <i class="fas fa-graduation-cap"></i>
+                                Únete al Programa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-card-header">
+                        <div class="program-expand-indicator">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="program-header">
+                            <div class="program-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div>
+                                <h3>Cursos Libres</h3>
+                                <p style="margin: 0; opacity: 0.9; font-size: 0.9rem;">Educación para adultos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="program-content">
+                        <p class="program-description">
+                            <strong>Dirigido a:</strong> Personas mayores de 18 años que buscan ampliar sus horizontes profesionales y personales a través del aprendizaje de nuevos idiomas en un ambiente flexible y comprensivo.
+                        </p>
+                        
+                        <div class="program-features">
+                            <div class="program-feature">
+                                <strong>Objetivo:</strong> Desarrollo personal y profesional
+                            </div>
+                            <div class="program-feature">
+                                <strong>Modalidad:</strong> Horarios flexibles
+                            </div>
+                            <div class="program-feature">
+                                <strong>Niveles:</strong> Básico, intermedio y avanzado
+                            </div>
+                            <div class="program-feature">
+                                <strong>Certificación:</strong> Diplomas de participación
+                            </div>
+                        </div>
+
+                        <div class="program-stats">
+                            <div class="program-stat">
+                                <span class="program-stat-number">50+</span>
+                                <span class="program-stat-label">Adultos Graduados</span>
+                            </div>
+                            <div class="program-stat">
+                                <span class="program-stat-number">85%</span>
+                                <span class="program-stat-label">Tasa de Finalización</span>
+                            </div>
+                            <div class="program-stat">
+                                <span class="program-stat-number">3</span>
+                                <span class="program-stat-label">Idiomas Disponibles</span>
+                            </div>
+                        </div>
+
+                        <div class="program-cta">
+                            <a href="mailto:sembrandolenguas@gmail.com" class="program-btn">
+                                <i class="fas fa-book-open"></i>
+                                Inscribirse Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-card-header">
+                        <div class="program-expand-indicator">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="program-header">
+                            <div class="program-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div>
+                                <h3>Bibliotecas de la Calle</h3>
+                                <p style="margin: 0; opacity: 0.9; font-size: 0.9rem;">Lectura móvil</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="program-content">
+                        <p class="program-description">
+                            <strong>Misión:</strong> Expandir el acceso a la lectura en zonas vulnerables y comunidades con recursos limitados, llevando bibliotecas móviles directamente a donde más se necesitan.
+                        </p>
+                        
+                        <div class="program-features">
+                            <div class="program-feature">
+                                <strong>Impacto:</strong> Fomento del hábito de la lectura
+                            </div>
+                            <div class="program-feature">
+                                <strong>Metodología:</strong> Bibliotecas móviles
+                            </div>
+                            <div class="program-feature">
+                                <strong>Público:</strong> Niños, jóvenes y familias
+                            </div>
+                            <div class="program-feature">
+                                <strong>Cobertura:</strong> Comunidades rurales y urbanas
+                            </div>
+                        </div>
+
+                        <div class="program-stats">
+                            <div class="program-stat">
+                                <span class="program-stat-number">20+</span>
+                                <span class="program-stat-label">Libros Donados</span>
+                            </div>
+                            <div class="program-stat">
+                                <span class="program-stat-number">2</span>
+                                <span class="program-stat-label">Comunidades Visitadas</span>
+                            </div>
+                            <div class="program-stat">
+                                <span class="program-stat-number">40+</span>
+                                <span class="program-stat-label">Niños Beneficiados</span>
+                            </div>
+                        </div>
+
+                        <div class="program-cta">
+                            <a href="mailto:sembrandolenguas@gmail.com" class="program-btn">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Solicitar Visita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-card-header">
+                        <div class="program-expand-indicator">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="program-header">
+                            <div class="program-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <div>
+                                <h3>Kuskalla</h3>
+                                <p style="margin: 0; opacity: 0.9; font-size: 0.9rem;">Alfabetización digital</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="program-content">
+                        <p class="program-description">
+                            <strong>Enfoque:</strong> Combatir el analfabetismo digital en zonas vulnerables, proporcionando acceso a plataformas digitales y herramientas tecnológicas esenciales para el aprendizaje moderno.
+                        </p>
+                        
+                        <div class="program-features">
+                            <div class="program-feature">
+                                <strong>Objetivo:</strong> Inclusión digital
+                            </div>
+                            <div class="program-feature">
+                                <strong>Herramientas:</strong> Plataformas educativas online
+                            </div>
+                            <div class="program-feature">
+                                <strong>Beneficio:</strong> Preparación para el futuro digital
+                            </div>
+                            <div class="program-feature">
+                                <strong>Soporte:</strong> Capacitación técnica continua
+                            </div>
+                        </div>
+<!-- 
+                        <div class="program-stats">
+                            <div class="program-stat">
+                                <span class="program-stat-number">200+</span>
+                                <span class="program-stat-label">Personas Capacitadas</span>
+                            </div>
+                            <div class="program-stat">
+                                <span class="program-stat-number">12</span>
+                                <span class="program-stat-label">Centros de Capacitación</span>
+                            </div>
+                            <div class="program-stat">
+                                <span class="program-stat-number">95%</span>
+                                <span class="program-stat-label">Satisfacción del Usuario</span>
+                            </div>
+                        </div>
+-->
+                        <div class="program-cta">
+                            <a href="mailto:sembrandolenguas@gmail.com" class="program-btn">
+                                <i class="fas fa-computer"></i>
+                                Acceder al Programa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="colabora">
+        <div class="cta-content">
+            <h2 style="margin-bottom: 2rem; font-size: 2.5rem;">Únete a Nuestra Misión</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 3rem;">Juntos podemos transformar vidas a través del poder de los idiomas</p>
+            
+            <div class="cta-grid">
+                <div class="cta-card" id="donadores">
+                    <i class="fas fa-heart"></i>
+                    <h3>Conviértete en Donador</h3>
+                    <p>Tu aporte económico nos permite llegar a más niños y niñas, creando oportunidades educativas que cambiarán sus vidas para siempre.</p>
+                    <a href="mailto:sembrandolenguas@gmail.com" class="btn btn-primary" style="margin-top: 1.5rem;">
+                        <i class="fas fa-donate"></i>
+                        Donar Ahora
+                    </a>
+                </div>
+                
+                <div class="cta-card" id="voluntarios">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Sé Voluntario</h3>
+                    <p>Comparte tu conocimiento de idiomas, tiempo y talento. Únete a nuestro equipo de voluntarios comprometidos con la educación.</p>
+                    <a href="mailto:sembrandolenguas@gmail.com" class="btn btn-primary" style="margin-top: 1.5rem;">
+                        <i class="fas fa-user-plus"></i>
+                        Ser Voluntario
+                    </a>
+                </div>
+                
+                <div class="cta-card" id="estudiantes">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Aprende Idiomas</h3>
+                    <p>¿Quieres aprender un nuevo idioma? Únete a nuestros programas gratuitos y descubre un mundo de oportunidades.</p>
+                    <a href="mailto:sembrandolenguas@gmail.com" class="btn btn-primary" style="margin-top: 1.5rem;">
+                        <i class="fas fa-book-open"></i>
+                        Inscribirse
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i "></i>
+                Sembrando Lenguas
+            </div>
+            
+            <p class="footer-quote">
+                "Transformamos idiomas en oportunidades"
+            </p>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/OrganizacionSembrandoLenguas/" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/sembrando_lenguas/" title="Instagram"><i class="fab fa-instagram"></i></a>
+                
+                <a href="linkedin.com/company/sembrando-lenguas/?originalSubdomain=pe" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@asociacionsembrandolenguas5726" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <div style="margin: 2rem 0; padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.2);">
+                <p><strong>Contacto:</strong></p>
+                <p>Email: sembrandolenguas@gmail.com </p>
+                <p>Teléfono: +51 941 181 802</p>
+                <p>Ubicación: Arequipa, Perú</p>
+            </div>
+            
+            <p>&copy; 2025 Sembrando Lenguas. Todos los derechos reservados.</p>
+            <p style="font-size: 0.9rem; opacity: 0.8;">Organización sin fines de lucro dedicada a la educación lingüística inclusiva</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const menuToggle = document.querySelector('.menu-toggle i');
+            
+            navLinks.classList.toggle('active');
+            
+            if (navLinks.classList.contains('active')) {
+                menuToggle.classList.replace('fa-bars', 'fa-times');
+            } else {
+                menuToggle.classList.replace('fa-times', 'fa-bars');
+            }
+        }
+
+        // Tab functionality
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            
+            // Hide all tab contents
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            
+            // Remove active class from all tab buttons
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            
+            // Show the selected tab content and mark button as active
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(74, 144, 226, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'var(--gradient-primary)';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                const navLinks = document.querySelector('.nav-links');
+                const menuToggle = document.querySelector('.menu-toggle i');
+                
+                navLinks.classList.remove('active');
+                menuToggle.classList.replace('fa-times', 'fa-bars');
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease forwards';
+                }
+            });
+        }, observerOptions);
+
+        // Observe cards and timeline items
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.card, .mvv-card, .value-item, .timeline-item, .program-card, .cta-card');
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
